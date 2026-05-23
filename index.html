@@ -198,10 +198,10 @@
   /* WISHES */
   .wishes-section { margin-top:30px; text-align:left; }
   .wishes-label { font-family:"Cinzel",serif; font-size:0.65rem; letter-spacing:0.3em; text-transform:uppercase; color:var(--gold-dark); display:block; margin-bottom:10px; text-align:center; }
-  .wishes-name { width:100%; border:1px solid var(--gold-light); background:rgba(255,255,255,0.04); padding:11px 16px; font-family:"Cormorant Garamond",serif; font-size:1.05rem; color:var(--text-dark); outline:none; transition:border-color 0.3s; margin-bottom:10px; }
+  .wishes-name { width:100%; border:1px solid var(--gold-light); background:transparent; padding:11px 16px; font-family:"Cormorant Garamond",serif; font-size:1.05rem; color:var(--text-dark); outline:none; transition:border-color 0.3s; margin-bottom:10px; box-sizing:border-box; }
   .wishes-name:focus { border-color:var(--gold); }
   .wishes-name::placeholder { color:var(--text-light); font-style:italic; }
-  .wishes-textarea { width:100%; border:1px solid var(--gold-light); background:rgba(255,255,255,0.04); padding:14px 16px; font-family:"Cormorant Garamond",serif; font-size:1.05rem; color:var(--text-dark); resize:vertical; min-height:100px; outline:none; transition:border-color 0.3s; }
+  .wishes-textarea { width:100%; border:1px solid var(--gold-light); background:rgba(255,255,255,0.04); padding:14px 16px; font-family:"Cormorant Garamond",serif; font-size:1.05rem; color:var(--text-dark); resize:vertical; min-height:100px; outline:none; transition:border-color 0.3s; box-sizing:border-box; }
   .wishes-textarea:focus { border-color:var(--gold); }
   .wishes-textarea::placeholder { color:var(--text-light); font-style:italic; }
   .wishes-send-btn { width:100%; padding:13px; border:1px solid var(--gold); background:transparent; color:var(--gold-dark); font-family:"Cinzel",serif; font-size:0.7rem; letter-spacing:0.22em; text-transform:uppercase; cursor:pointer; transition:background 0.3s,color 0.3s; margin-top:10px; }
@@ -218,8 +218,6 @@
   .wish-guest { font-family:"Cinzel",serif; font-size:0.65rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--gold-dark); margin-bottom:6px; }
   .wish-text { font-family:"Cormorant Garamond",serif; font-style:italic; font-size:1.05rem; color:var(--text-dark); line-height:1.65; }
   .wishes-empty { font-family:"Cormorant Garamond",serif; font-style:italic; color:var(--text-light); font-size:0.95rem; padding:10px 0; text-align:center; }
-  to   { transform: scaleY(1); }
-  }
 
   @media(max-width:520px){
     .card{padding:40px 22px 50px;}
