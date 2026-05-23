@@ -197,6 +197,7 @@
 
   /* WISHES */
   .wishes-section { margin-top:30px; text-align:left; }
+  .wishes-section .divider { width:100%; display:flex; align-items:center; gap:14px; }
   .wishes-label { font-family:"Cinzel",serif; font-size:0.65rem; letter-spacing:0.3em; text-transform:uppercase; color:var(--gold-dark); display:block; margin-bottom:10px; text-align:center; }
   .wishes-name { width:100%; border:1px solid var(--gold-light); background:transparent; padding:11px 16px; font-family:"Cormorant Garamond",serif; font-size:1.05rem; color:var(--text-dark); outline:none; transition:border-color 0.3s; margin-bottom:10px; box-sizing:border-box; }
   .wishes-name:focus { border-color:var(--gold); }
@@ -272,7 +273,7 @@
         <!-- Seal -->
         <circle cx="110" cy="130" r="22" fill="#c9a96e" opacity="0.18"/>
         <circle cx="110" cy="130" r="17" fill="none" stroke="#c9a96e" stroke-width="1"/>
-        <text x="110" y="136" text-anchor="middle" font-family="Cormorant Garamond, serif" font-style="italic" font-size="14" fill="#9a7740">R&amp;N</text>
+        <text x="110" y="136" text-anchor="middle" font-family="Cormorant Garamond, serif" font-style="italic" font-size="14" fill="#9a7740">N&amp;R</text>
         <!-- Letter peek (hidden by default, rises on open) -->
         <g class="env-letter">
           <rect x="42" y="60" width="136" height="80" rx="2" fill="#faf6f0" stroke="#e8d5b0" stroke-width="1" opacity="0.95"/>
@@ -361,7 +362,7 @@
 
       <div class="location-block reveal">
         <div class="location-name">Snehatheeram Convention Centre</div>
-        <div class="location-addr">Ambalakkandi, Omassery</div>
+        <div class="location-addr">Ambalakkandi,Omassery</div>
         <a class="nav-btn" href="https://maps.app.goo.gl/wRyP833oGuAtpKmX8" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
           Get Directions
@@ -397,7 +398,7 @@
       <div class="wishes-section reveal" id="wishesSection" style="display:none;">
         <div class="divider"><div class="divider-line"></div><div class="divider-icon">✦</div><div class="divider-line"></div></div>
         <span class="wishes-label">Leave your wishes</span>
-        <input class="wishes-name" id="wishName" type="text" placeholder="Your name" />
+        <input class="wishes-name" id="wishName" type="text" placeholder="Your name (optional)" />
         <textarea class="wishes-textarea" id="wishTextarea" placeholder="Share a message or blessing for Rafi & Najiya…" rows="4"></textarea>
         <button class="wishes-send-btn" id="wishSendBtn" onclick="sendWish()">✦ Send Wishes ✦</button>
         <div class="wishes-sent" id="wishesSent">Your wishes have been sent — thank you! ✦</div>
